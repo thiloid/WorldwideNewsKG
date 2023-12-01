@@ -22,7 +22,7 @@ def add_logo():
     )
                        
 g=rdflib.Graph ()
-g.parse('export_dbpedia.ttl')
+g.parse('app/export_dbpedia.ttl')
 print("______________________________________________________")
 print("KG loaded")
 print("______________________________________________________")
