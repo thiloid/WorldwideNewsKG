@@ -182,7 +182,7 @@ def query_runner(option, option2, option3):
         return(l1)
 
 add_logo()
-st.image("Logow.png", width=300)
+st.image("app/Logow.png", width=300)
 st.write("""
 # Wordwide News 1.0
 #### To find news you never knew you wanted to read
