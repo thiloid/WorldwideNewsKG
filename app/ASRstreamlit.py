@@ -237,7 +237,7 @@ print("Done with final query")
 print("______________________________________________________")
 if bb!= "Nothing selected":
     if b ==1:
-        st.write("only actor")
+        st.write("Results are only based on your chosen Actor!")
     st.write("Your Article:",bb )
     st.components.v1.iframe(bb, height=600, scrolling=True)
 if len(aa)>1:
