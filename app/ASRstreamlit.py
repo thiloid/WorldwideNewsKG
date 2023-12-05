@@ -181,7 +181,7 @@ def query_runner(option, option2, option3):
             for row in qres:
                 initial_value= str(row.b)
                 l1.append(str(initial_value))
-        return l1, b
+        return l1
 
 add_logo()
 st.image("app/Logo.png", width=300)
@@ -223,7 +223,7 @@ st.write('You selected:', option2)
 print("______________________________________________________")
 print("Done")
 print("______________________________________________________")
-aa, b=query_runner(option, option2, option3)
+aa=query_runner(option, option2, option3)
 bb= str(aa[0])
 counter=0
 if aa[0]=="Nothing selected":
@@ -236,8 +236,8 @@ print("______________________________________________________")
 print("Done with final query")
 print("______________________________________________________")
 if bb!= "Nothing selected":
-    if b ==1:
-        st.write("Results are only based on your chosen Actor!")
+    #if b ==1:
+        #st.write("Results are only based on your chosen Actor!")
     st.write("Your Article:",bb )
     st.components.v1.iframe(bb, height=600, scrolling=True)
 if len(aa)>1:
